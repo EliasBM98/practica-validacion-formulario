@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificacion formulario 1</title>
+
+</head>
+
+<body>
+<!--CABECERA-->
+    <header>
+        <h1>Club de la bici</h1>
+    </header>
+
+
+<!--ZONA DE REGISTRO-->
+    <main>
+        <p>Para unirte al club de la bici rellena los siguientes campos:</p>
+        <section>
+            <form 
+            id="formularioDeregistro">
+
+            <fieldset>
+                <legend><h2>Datos personales</h2></legend>
+                <!--Nombre (texto)-->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+                <!--Apellidos (texto)-->
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required><br><br>
+
+                <!--Edad (numero)-->
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Viej@" required><br><br>
+
+                <!--Genereo fieldset y radio-->
+                <p>Género:</p>
+                <fieldset>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="hombre" name="hombre"><br>
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="mujer" name="mujer" >
+                </fieldset><br><br>
+
+                <!--Checkbox-->
+                <label for="club">Me siento del club</label>
+                <input type="checkbox" name="club" id="club"><br><br>
+
+                <!--Escribe algo (textarea)-->
+                <label for="comentarios">Escribe algo sobre ti:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+            </fieldset>
+
+
+                <!--Datos de contacyto (fieldset)-->
+            <fieldset>
+                <legend><h2>Datos de contacto</h2></legend>
+                <!--Correo (mail)-->
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required><br><br>
+
+                <!--Telefono (tel)-->
+                <label for="telefono">Tu telefono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu telefono" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend><h2>Terminar</h2></legend>
+
+                <!--Enviar (submit)-->
+                <label for="submit"></label>
+                <input type="submit" name="submit" id="submit">
+
+                <!--Repetir (reset)-->
+                <label for="repetir"></label>
+                <input type="reset" name="repetir" id="repetir">
+            </fieldset>
+
+            
+            </form>
+        </section>
+    </main>
+    <script src="js/formulario1.js"></script>
+</body>
+</html>

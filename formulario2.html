@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificacion formulario2</title>
+</head>
+<body>
+    
+    <script src="js/formulario2.js"></script>
+
+<!--CABECERA-->
+    <header>
+        <h1>Registra el robo de tu bici</h1>
+    </header>
+
+<!--ZONA DE REGISTRO-->
+    <main>
+        <p>Rellena los siguientes campos para registrar el robo de tu bici:</p><br>
+
+        <section>
+            <h1>Datos del robo</h1>
+            <form action="/enviardatos" method="post" enctype="multipart/form-data">
+
+                <!--field para cuando-->
+                <fieldset>
+                  
+                    <legend><h2>¿Cuándo ocurrió?</h2></legend>
+                    <!--dia del robo (date)-->
+                    <label for="dia">Día en el que ocurrió.</label>
+                    <input type="date" id="dia" name="dia" required><br><br>
+    
+                    <!--hora del robo (time)-->
+                    <label for="hora">Hora a la que ocurrió.</label>
+                    <input type="time" name="hora" id="hora" required><br>
+                </fieldset>
+                
+                <!--field para datos de la bici-->
+                <fieldset>
+                    <legend><h2>Datos de la bici.</h2></legend>
+    
+                    <!--Color de la bici (color)-->
+                    <label for="color">Color de la bici.</label>
+                    <input type="color" id="color" name="color" placeholder="Color de la bici"><br><br>
+    
+                    <!--Rango de precio (range)-->
+                    <label for="precio">Rango de precio.</label>
+                    <input type="range" name="precio" id="precio" min="100" max="3000"><br><br>
+    
+                    <!--tipo de bici (selector)-->
+                    <label for="urbana" slelected="none1">Urbana:</label>
+                    <select id="urbana" name="urbana">
+                        <option value="none1">No</option>
+                        <option value="clasica">Clásica</option>
+                        <option value="plegable">Plegable</option>
+                        <option value="electrica">Eléctrica</option>
+                        <option value="commuter">Commuter</option>
+                    </select><br><br>
+    
+                    <label for="montana" slelected="none2">Montaña:</label>
+                    <select id="montana" name="montana">
+                        <option value="none2">No</option>
+                        <option value="sport">Sport</option>
+                        <option value="trail">Trail</option>
+                        <option value="xc">Cross Country</option>
+                    </select><br><br>
+    
+                    <label for="carreras" slelected="none3">Carreras:</label>
+                    <select id="carreras" name="carreras">
+                        <option value="none3">No</option>
+                        <option value="granfondo">Gran fondo</option>
+                        <option value="racing">Racing</option>
+                        <option value="aero">Aero</option>
+                    </select><br><br>
+    
+                    <!--acesiorios (selector multriple)-->
+                        <label for="accesorios" >Accesorios instalados en la bici:</label>
+                        <select name="accesorios" id="accesorios" multiple selected="ninguno">
+                            <option value="ninguno">Ninguno</option>
+                            <option value="ruedines">Ruedines</option>
+                            <option value="hinchadores">Hinchadores</option>
+                            <option value="rodillos">Rodillos</option>
+                            <option value="bomba">Bomba de Aire</option>
+                            <option value="alforja">Alforja</option>
+                            <option value="silla">Silla portabebés</option>
+                        </select><br><br><br>
+                    
+                    <!--que marca era (lista de datos)-->
+                    <label for="marca" >Marca de la bici:</label>
+                        <select name="accesorios" id="accesorios">
+                            <option value="specialiced">specialiced</option>
+                            <option value="trek">trek</option>
+                            <option value="merida">merida</option>
+                            <option value="scott">scott</option>
+                            <option value="giant">giant</option>
+                            <option value="cube">cube</option>
+                            <option value="lapierre">lapierre</option>
+                            <option value="orbea">orbea</option>
+                            <option value="cannondale">cannondale</option>
+                            <option value="bmc">bmc</option>
+                            <option value="canyon">canyon</option>
+                            <option value="look">look</option>
+                            <option value="protek">protek</option>
+                            <option value="megamo">megamo</option>
+                            <option value="pinarello">pinarello</option>
+                            <option value="bianchi">bianchi</option>
+                            <option value="bh">bh</option>
+                            <option value="factor">factor</option>
+                            <option value="ghost">ghost</option>
+                            <option value="cervélo">cervélo</option>
+                            <option value="argon">argon</option>
+                            <option value="otro"></option>
+                        </select><br><br>
+                    </fieldset>
+    
+    
+                    <fieldset>
+                        <legend><h2>Completa el formulario</h2></legend>
+                    <!--por mi cuenta: boton borrar-->
+                        <label for="borrar"></label>
+                        <input type="reset" id="borrer" name="borrar" value="Borrar">
+    
+                    <!--por mi cuenta: -->
+                        <label for="enviar"></label>
+                        <input type="submit" id="enviar" name="enviar" value="Enviar">
+                
+                    </fieldset>
+               
+    
+    
+    
+            </form>
+        </section>
+
+
+
+    </main>
+
+
+</body>
+</html>
